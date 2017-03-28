@@ -21,3 +21,7 @@ up:
 backup:
 	docker-compose run backup \
 		ash -c "tar cvfz /tmp/idx.tgz /data/lucene/namematching"
+
+release:
+	docker push dina/ala-nameindex:v0.1
+
