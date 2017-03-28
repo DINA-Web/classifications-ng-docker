@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+  nameindexer:
+    image: dina/ala-nameindex:v0.1
+    command: /bin/ash
+
+  api:
+    image: openjdk:8-alpine
+    command: /bin/ash
+    volumes_from:
+      - nameindexer
+
+  backup:
+    image: alpine
+    command: /bin/ash
+    volumes:
+      - ./backups:/tmp/
+    volumes_from:
+      - nameindexer
