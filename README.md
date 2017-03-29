@@ -32,7 +32,9 @@ Content is provided as `nameindex/dwca-dyntaxa.zip` with Dyntaxa data from 2012 
 
 Use `make build` to generate the image, and push to Docker Hub with `make release`.
 
-## Questions / issues / discussions
+Use `make dyntaxa-dl` to pull up-to-date Dyntaxa data
 
+## TODO / Questions / issues / discussions
 
+- Refactor the dyntaxa conversion to dwca
 

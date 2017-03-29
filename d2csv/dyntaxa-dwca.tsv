@@ -1,0 +1,182 @@
+taxonID	parentNameUsageID	scientificNameID	scientificName	scientificNameAuthorship	namePublishedInYear	CommonName	vernacularName	taxonRankID	taxonRank
+5000013	0	urn:lsid:dyntaxa.se:Taxon:5000013	Tardigrada	Spallanzani	1777	björndjur	björndjur:swe	2	Phylum
+3000064	5000013	urn:lsid:dyntaxa.se:Taxon:3000064	Eutardigrada	Richters	1926			5	Class
+3000063	5000013	urn:lsid:dyntaxa.se:Taxon:3000063	Heterotardigrada	Marcus	1927			5	Class
+6000970	3000064	urn:lsid:dyntaxa.se:Taxon:6000970	Apochela	Schuster et al.	1980			8	Order
+6000971	3000064	urn:lsid:dyntaxa.se:Taxon:6000971	Parachela	Schuster et al.	1980			8	Order
+6000968	3000063	urn:lsid:dyntaxa.se:Taxon:6000968	Arthrotardigrada	Marcus	1927			8	Order
+6000969	3000063	urn:lsid:dyntaxa.se:Taxon:6000969	Echiniscoidea	Richters	1926			8	Order
+6007250	6000971	urn:lsid:dyntaxa.se:Taxon:6007250	Eohypsibioidea	Bertolani & Kristensen	1987			10	Superfamily
+6007256	6000971	urn:lsid:dyntaxa.se:Taxon:6007256	Hypsibioidea	Pilato	1969			10	Superfamily
+6007301	6000971	urn:lsid:dyntaxa.se:Taxon:6007301	Isohypsibioidea	Sands et al.	2008			10	Superfamily
+6007321	6000971	urn:lsid:dyntaxa.se:Taxon:6007321	Macrobiotoidea	Thulin	1928			10	Superfamily
+2000334	6000970	urn:lsid:dyntaxa.se:Taxon:2000334	Milnesiidae	Ramazzotti	1962			11	Family
+6007251	6007250	urn:lsid:dyntaxa.se:Taxon:6007251	Eohypsibiidae	Ramazzotti	1962			11	Family
+2000332	6007256	urn:lsid:dyntaxa.se:Taxon:2000332	Calohypsibiidae	Pilato	1969			11	Family
+2000333	6007256	urn:lsid:dyntaxa.se:Taxon:2000333	Hypsibiidae	Pilato	1969			11	Family
+6007297	6007256	urn:lsid:dyntaxa.se:Taxon:6007297	Microhypsibiidae	Pilato	1998			11	Family
+6007300	6007256	urn:lsid:dyntaxa.se:Taxon:6007300	Ramazzottiidae	Sands et al.	2008			11	Family
+6007302	6007301	urn:lsid:dyntaxa.se:Taxon:6007302	Isohypsibiidae	Sands et al.	2008			11	Family
+2000331	6007321	urn:lsid:dyntaxa.se:Taxon:2000331	Macrobiotidae	Thulin	1928			11	Family
+6007327	6007321	urn:lsid:dyntaxa.se:Taxon:6007327	Murrayidae	Guidetti et al.	2005			11	Family
+2000329	6000968	urn:lsid:dyntaxa.se:Taxon:2000329	Batillipedidae	Ramazzotti	1962			11	Family
+2000328	6000968	urn:lsid:dyntaxa.se:Taxon:2000328	Halechiniscidae	Thulin	1928			11	Family
+6007199	6000969	urn:lsid:dyntaxa.se:Taxon:6007199	Echiniscoididae	Krsitensen & Hallas	1980			11	Family
+2000330	6000969	urn:lsid:dyntaxa.se:Taxon:2000330	Echiniscidae	Thulin	1928			11	Family
+6007260	2000333	urn:lsid:dyntaxa.se:Taxon:6007260	Diphasconinae	Dastych	1992			12	Subfamily
+6007276	2000333	urn:lsid:dyntaxa.se:Taxon:6007276	Hypsibiinae	Pilato	1969			12	Subfamily
+6007285	2000333	urn:lsid:dyntaxa.se:Taxon:6007285	Itaquasconinae	Rudescu	1964			12	Subfamily
+6007293	2000333	urn:lsid:dyntaxa.se:Taxon:6007293	Pilatobiinae	Bertolani et al.	2014			12	Subfamily
+6007182	2000328	urn:lsid:dyntaxa.se:Taxon:6007182	Halechiniscinae	Thulin	1928			12	Subfamily
+6007173	2000328	urn:lsid:dyntaxa.se:Taxon:6007173	Styraconyxinae	Kristensen & Renaud-Mornant	1983			12	Subfamily
+6007177	2000328	urn:lsid:dyntaxa.se:Taxon:6007177	Tanarctinae	Renaud-Mornant	1980			12	Subfamily
+1012919	2000334	urn:lsid:dyntaxa.se:Taxon:1012919	Milnesium	Doyère	1840			14	Genus
+6007252	6007251	urn:lsid:dyntaxa.se:Taxon:6007252	Bertolanius	Özdikmen	2008			14	Genus
+1013421	2000332	urn:lsid:dyntaxa.se:Taxon:1013421	Calohypsibius	Thulin	1928			14	Genus
+1013422	6007260	urn:lsid:dyntaxa.se:Taxon:1013422	Diphascon	Plate	1889			14	Genus
+1013424	6007276	urn:lsid:dyntaxa.se:Taxon:1013424	Hypsibius	Ehrenberg	1848			14	Genus
+6007286	6007285	urn:lsid:dyntaxa.se:Taxon:6007286	Adropion	Pilato	1987			14	Genus
+6007289	6007285	urn:lsid:dyntaxa.se:Taxon:6007289	Astatumen	Pilato	1997			14	Genus
+1013426	6007285	urn:lsid:dyntaxa.se:Taxon:1013426	Itaquascon	de Barros	1939			14	Genus
+1013427	6007285	urn:lsid:dyntaxa.se:Taxon:1013427	Mesocrista	Pilato	1987			14	Genus
+6007290	6007285	urn:lsid:dyntaxa.se:Taxon:6007290	Platicrista	Pilato	1987			14	Genus
+6007294	6007293	urn:lsid:dyntaxa.se:Taxon:6007294	Pilatobius	Bertolani et al.	2014			14	Genus
+1013428	2000333	urn:lsid:dyntaxa.se:Taxon:1013428	Pseodobiotus					14	Genus
+6007298	6007297	urn:lsid:dyntaxa.se:Taxon:6007298	Fractonotus	Pilato	1998			14	Genus
+1013423	6007300	urn:lsid:dyntaxa.se:Taxon:1013423	Hebesuncus	Pilato	1987			14	Genus
+1013429	6007300	urn:lsid:dyntaxa.se:Taxon:1013429	Ramazzottius	Binda & Pilato	1986			14	Genus
+1013425	6007302	urn:lsid:dyntaxa.se:Taxon:1013425	Doryphoribius					14	Genus
+1011036	6007302	urn:lsid:dyntaxa.se:Taxon:1011036	Halobiotus	Kristensen	1982			14	Genus
+1012918	6007302	urn:lsid:dyntaxa.se:Taxon:1012918	Isohypsibius	Thulin	1928			14	Genus
+6007319	6007302	urn:lsid:dyntaxa.se:Taxon:6007319	Thulinius	Bertolani	2003			14	Genus
+1012913	2000331	urn:lsid:dyntaxa.se:Taxon:1012913	Macrobiotus	C.A.S.Schultze	1834			14	Genus
+1013419	2000331	urn:lsid:dyntaxa.se:Taxon:1013419	Minibiotus	Schuster	1980			14	Genus
+6007331	2000331	urn:lsid:dyntaxa.se:Taxon:6007331	Paramacrobiotus	Guidetti et al.	2009			14	Genus
+1013420	2000331	urn:lsid:dyntaxa.se:Taxon:1013420	Richtersius	Pilato & Binda	1989			14	Genus
+1013418	6007327	urn:lsid:dyntaxa.se:Taxon:1013418	Dactylobiotus	Schuster	1980			14	Genus
+6007328	6007327	urn:lsid:dyntaxa.se:Taxon:6007328	Murrayon	Bertolani & Pilato	1988			14	Genus
+1011032	2000329	urn:lsid:dyntaxa.se:Taxon:1011032	Batillipes	Schulz	1953			14	Genus
+1012912	6007182	urn:lsid:dyntaxa.se:Taxon:1012912	Halechiniscus	Richters	1908			14	Genus
+1011033	6007173	urn:lsid:dyntaxa.se:Taxon:1011033	Raiarctus	Renaud-Mornant	1981			14	Genus
+1011034	6007177	urn:lsid:dyntaxa.se:Taxon:1011034	Actinarctus	Schulz	1935			14	Genus
+6007180	6007177	urn:lsid:dyntaxa.se:Taxon:6007180	Tanarctus	Renaud-Debyser	1959			14	Genus
+1011035	6007199	urn:lsid:dyntaxa.se:Taxon:1011035	Echiniscoides	Plate	1888			14	Genus
+6007201	2000330	urn:lsid:dyntaxa.se:Taxon:6007201	Bryochoerus	Marcus	1936			14	Genus
+1013416	2000330	urn:lsid:dyntaxa.se:Taxon:1013416	Bryodelphax	Thulin	1928			14	Genus
+6007204	2000330	urn:lsid:dyntaxa.se:Taxon:6007204	Diploechiniscus	Vicente et al.	2013			14	Genus
+1013415	2000330	urn:lsid:dyntaxa.se:Taxon:1013415	Echiniscus	C.A.S.Schultze	1840			14	Genus
+6007212	2000330	urn:lsid:dyntaxa.se:Taxon:6007212	Parechiniscus	Cuénot	1926			14	Genus
+1013417	2000330	urn:lsid:dyntaxa.se:Taxon:1013417	Pseudechiniscus	Thulin	1911			14	Genus
+6007214	2000330	urn:lsid:dyntaxa.se:Taxon:6007214	Testechiniscus	Kristensen	1987			14	Genus
+247100	1012919	urn:lsid:dyntaxa.se:Taxon:247100	Milnesium tardigradum	Doyère	1840			17	Species
+6007238	1012919	urn:lsid:dyntaxa.se:Taxon:6007238	Milnesium asiaticum	Tumanov	2006			17	Species
+6007253	6007252	urn:lsid:dyntaxa.se:Taxon:6007253	Bertolanius smreczynskii	Węglarska	1970			17	Species
+248431	1013421	urn:lsid:dyntaxa.se:Taxon:248431	Calohypsibius ornatus	Richters	1900			17	Species
+248432	1013421	urn:lsid:dyntaxa.se:Taxon:248432	Calohypsibius verrucosus	Richters	1900			17	Species
+248433	1013422	urn:lsid:dyntaxa.se:Taxon:248433	Diphascon alpinum	J.Murray	1906			17	Species
+248435	1013422	urn:lsid:dyntaxa.se:Taxon:248435	Diphascon chilenense	Plate	1888			17	Species
+6007275	1013422	urn:lsid:dyntaxa.se:Taxon:6007275	Diphascon pingue	Marcus	1936			17	Species
+248440	1013422	urn:lsid:dyntaxa.se:Taxon:248440	Diphascon tenue	Thulin	1928			17	Species
+248443	1013424	urn:lsid:dyntaxa.se:Taxon:248443	Hypsibius arcticus	J.Murray	1907			17	Species
+248444	1013424	urn:lsid:dyntaxa.se:Taxon:248444	Hypsibius convergens	Urbanowicz	1925			17	Species
+248445	1013424	urn:lsid:dyntaxa.se:Taxon:248445	Hypsibius dujardini	Doyère	1840			17	Species
+248446	1013424	urn:lsid:dyntaxa.se:Taxon:248446	Hypsibius microps	Thulin	1928			17	Species
+248447	1013424	urn:lsid:dyntaxa.se:Taxon:248447	Hypsibius pallidus	Thulin	1911			17	Species
+248434	6007286	urn:lsid:dyntaxa.se:Taxon:248434	Adropion arduifrons	Thulin	1928			17	Species
+6007287	6007286	urn:lsid:dyntaxa.se:Taxon:6007287	Adropion belgicae	Richters	1911			17	Species
+248437	6007286	urn:lsid:dyntaxa.se:Taxon:248437	Adropion prorsirostre	Thulin	1928			17	Species
+248439	6007286	urn:lsid:dyntaxa.se:Taxon:248439	Adropion scoticum	J.Murray	1905			17	Species
+248464	1013426	urn:lsid:dyntaxa.se:Taxon:248464	Itaquascon enckelli	Mihelčič	1971			17	Species
+248465	1013426	urn:lsid:dyntaxa.se:Taxon:248465	Itaquascon pawlowskii	Węglarska	1973			17	Species
+248466	1013426	urn:lsid:dyntaxa.se:Taxon:248466	Itaquascon placophorum	Maucci	1973			17	Species
+248467	1013427	urn:lsid:dyntaxa.se:Taxon:248467	Mesocrista spitzbergense	Richters	1903			17	Species
+6007291	6007290	urn:lsid:dyntaxa.se:Taxon:6007291	Platicrista angustata	J.Murray	1905			17	Species
+6007292	6007290	urn:lsid:dyntaxa.se:Taxon:6007292	Platicrista itaquasconoide	Durante Pasa & Maucci	1975			17	Species
+6007295	6007294	urn:lsid:dyntaxa.se:Taxon:6007295	Pilatobius bullatus	J.Murray	1905			17	Species
+248436	6007294	urn:lsid:dyntaxa.se:Taxon:248436	Pilatobius oculatus	J.Murray	1906			17	Species
+248438	6007294	urn:lsid:dyntaxa.se:Taxon:248438	Pilatobius recamieri	Richters	1911			17	Species
+6007296	6007294	urn:lsid:dyntaxa.se:Taxon:6007296	Pilatobius rugosus	Bartoš	1935			17	Species
+6007299	6007298	urn:lsid:dyntaxa.se:Taxon:6007299	Fractonotus caelatus	Marcus	1928			17	Species
+248442	1013423	urn:lsid:dyntaxa.se:Taxon:248442	Hebesuncus conjungens	Thulin	1911			17	Species
+248469	1013429	urn:lsid:dyntaxa.se:Taxon:248469	Ramazzottius oberhaeuseri	Doyère	1840			17	Species
+248441	1013425	urn:lsid:dyntaxa.se:Taxon:248441	Doryphoribius citrinus	Maucci	1972			17	Species
+240535	1011036	urn:lsid:dyntaxa.se:Taxon:240535	Halobiotus crispae	Kristensen	1982			17	Species
+247055	1011036	urn:lsid:dyntaxa.se:Taxon:247055	Halobiotus stenostomus	Richters	1908			17	Species
+248449	1012918	urn:lsid:dyntaxa.se:Taxon:248449	Isohypsibius annulatus	J.Murray	1905			17	Species
+248452	1012918	urn:lsid:dyntaxa.se:Taxon:248452	Isohypsibius basalovoi	Durante Pasa & Maucci	1973			17	Species
+248453	1012918	urn:lsid:dyntaxa.se:Taxon:248453	Isohypsibius fuscus	Mihelčič	1971			17	Species
+248454	1012918	urn:lsid:dyntaxa.se:Taxon:248454	Isohypsibius glaber	Durante Pasa & Maucci	1979			17	Species
+248455	1012918	urn:lsid:dyntaxa.se:Taxon:248455	Isohypsibius granulifer	Thulin	1928			17	Species
+248456	1012918	urn:lsid:dyntaxa.se:Taxon:248456	Isohypsibius helenae	Iharos	1964			17	Species
+6007316	1012918	urn:lsid:dyntaxa.se:Taxon:6007316	Isohypsibius indicus	J.Murray	1907			17	Species
+248457	1012918	urn:lsid:dyntaxa.se:Taxon:248457	Isohypsibius lunulatus	Iharos	1966			17	Species
+248458	1012918	urn:lsid:dyntaxa.se:Taxon:248458	Isohypsibius neoundulatus	Durante Pasa & Maucci	1975			17	Species
+248448	1012918	urn:lsid:dyntaxa.se:Taxon:248448	Isohypsibius prosostomus	Thulin	1928			17	Species
+248459	1012918	urn:lsid:dyntaxa.se:Taxon:248459	Isohypsibius pulcher	Mihelčič	1971			17	Species
+248451	1012918	urn:lsid:dyntaxa.se:Taxon:248451	Isohypsibius sattleri	Richters	1902			17	Species
+6007318	1012918	urn:lsid:dyntaxa.se:Taxon:6007318	Isohypsibius schaudinni	Richters	1909			17	Species
+248460	1012918	urn:lsid:dyntaxa.se:Taxon:248460	Isohypsibius septentrionalis	Thulin	1928			17	Species
+248461	1012918	urn:lsid:dyntaxa.se:Taxon:248461	Isohypsibius tetradactyloides	Richters	1907			17	Species
+248462	1012918	urn:lsid:dyntaxa.se:Taxon:248462	Isohypsibius tuberculatus	Plate	1888			17	Species
+248463	1012918	urn:lsid:dyntaxa.se:Taxon:248463	Isohypsibius undulatus	Thulin	1928			17	Species
+248468	6007319	urn:lsid:dyntaxa.se:Taxon:248468	Thulinius augusti	J.Murray	1907			17	Species
+6007320	6007319	urn:lsid:dyntaxa.se:Taxon:6007320	Thulinius ruffoi	Bertolani	1982			17	Species
+248417	1012913	urn:lsid:dyntaxa.se:Taxon:248417	Macrobiotus brevipes	Mihelčič	1971			17	Species
+247047	1012913	urn:lsid:dyntaxa.se:Taxon:247047	Macrobiotus echinogenitus	Richters	1903			17	Species
+248418	1012913	urn:lsid:dyntaxa.se:Taxon:248418	Macrobiotus harmsworthi	J.Murray	1907			17	Species
+248420	1012913	urn:lsid:dyntaxa.se:Taxon:248420	Macrobiotus hufelandi	C.A.S.Schultze	1834			17	Species
+248421	1012913	urn:lsid:dyntaxa.se:Taxon:248421	Macrobiotus islandicus	Richters	1904			17	Species
+248422	1012913	urn:lsid:dyntaxa.se:Taxon:248422	Macrobiotus longipes	Mihelčič	1971			17	Species
+248423	1012913	urn:lsid:dyntaxa.se:Taxon:248423	Macrobiotus luteus	Thulin	1928			17	Species
+6007330	1012913	urn:lsid:dyntaxa.se:Taxon:6007330	Macrobiotus macrocalix	Bertolani & Rebecchi	1993			17	Species
+248424	1012913	urn:lsid:dyntaxa.se:Taxon:248424	Macrobiotus montanus	J.Murray	1910			17	Species
+248425	1012913	urn:lsid:dyntaxa.se:Taxon:248425	Macrobiotus occidantalis	J.Murray	1910			17	Species
+248426	1012913	urn:lsid:dyntaxa.se:Taxon:248426	Macrobiotus orcadensis	J.Murray	1907			17	Species
+248428	1012913	urn:lsid:dyntaxa.se:Taxon:248428	Macrobiotus spectabilis	Thulin	1928			17	Species
+6007332	1012913	urn:lsid:dyntaxa.se:Taxon:6007332	Macrobiotus terminalis	Bertolani & Rebecchi	1993			17	Species
+248429	1013419	urn:lsid:dyntaxa.se:Taxon:248429	Minibiotus intermedius	Plate	1888			17	Species
+6007333	6007331	urn:lsid:dyntaxa.se:Taxon:6007333	Paramacrobiotus areolatus	J.Murray	1907			17	Species
+248427	6007331	urn:lsid:dyntaxa.se:Taxon:248427	Paramacrobiotus richtersi	J.Murray	1911			17	Species
+248430	1013420	urn:lsid:dyntaxa.se:Taxon:248430	Richtersius coronifer	Richters	1903			17	Species
+248413	1013418	urn:lsid:dyntaxa.se:Taxon:248413	Dactylobiotus ambiguus	J.Murray	1907			17	Species
+248414	1013418	urn:lsid:dyntaxa.se:Taxon:248414	Dactylobiotus ampullaceus	Thulin	1911			17	Species
+248415	1013418	urn:lsid:dyntaxa.se:Taxon:248415	Dactylobiotus dispar	J.Murray	1907			17	Species
+248416	1013418	urn:lsid:dyntaxa.se:Taxon:248416	Dactylobiotus macronyx	Dujardin	1851			17	Species
+6007336	1013418	urn:lsid:dyntaxa.se:Taxon:6007336	Dactylobiotus octavi	Guidetti et al.	2006			17	Species
+6007337	6007328	urn:lsid:dyntaxa.se:Taxon:6007337	Murrayon dianeae	Kristensen	1982			17	Species
+6007338	6007328	urn:lsid:dyntaxa.se:Taxon:6007338	Murrayon hastatus	J.Murray	1907			17	Species
+248419	6007328	urn:lsid:dyntaxa.se:Taxon:248419	Murrayon hibernicus	J.Murray	1911			17	Species
+6007339	6007328	urn:lsid:dyntaxa.se:Taxon:6007339	Murrayon pullari	J.Murray	1907			17	Species
+6007169	1011032	urn:lsid:dyntaxa.se:Taxon:6007169	Batillipes bullacaudatus	McGinty & Higgins	1968			17	Species
+240529	1011032	urn:lsid:dyntaxa.se:Taxon:240529	Batillipes mirus	Richters	1909			17	Species
+247035	1011032	urn:lsid:dyntaxa.se:Taxon:247035	Batillipes noerrevangi	Kristensen	1978			17	Species
+247034	1012912	urn:lsid:dyntaxa.se:Taxon:247034	Halechiniscus remanei	Schulz	1955			17	Species
+240530	1011033	urn:lsid:dyntaxa.se:Taxon:240530	Raiarctus aureolatus	Renaud-Mornant	1981			17	Species
+240531	1011034	urn:lsid:dyntaxa.se:Taxon:240531	Actinarctus doryphorus	Schulz	1935			17	Species
+6007181	6007180	urn:lsid:dyntaxa.se:Taxon:6007181	Tanarctus gracilis	Renaud-Mornant	1980			17	Species
+240533	1011035	urn:lsid:dyntaxa.se:Taxon:240533	Echiniscoides sigismundi	C.A.S.Schultze	1865			17	Species
+248401	6007201	urn:lsid:dyntaxa.se:Taxon:248401	Bryochoerus intermedius	J.Murray	1910			17	Species
+248399	1013416	urn:lsid:dyntaxa.se:Taxon:248399	Bryodelphax parvulus	Thulin	1928			17	Species
+248406	6007204	urn:lsid:dyntaxa.se:Taxon:248406	Diploechiniscus oihonnae	Richters	1903			17	Species
+248396	1013415	urn:lsid:dyntaxa.se:Taxon:248396	Echiniscus arctomys	Ehrenberg	1853			17	Species
+248397	1013415	urn:lsid:dyntaxa.se:Taxon:248397	Echiniscus blumi	Richters	1903			17	Species
+248398	1013415	urn:lsid:dyntaxa.se:Taxon:248398	Echiniscus filamentosus	Plate	1888			17	Species
+248400	1013415	urn:lsid:dyntaxa.se:Taxon:248400	Echiniscus granulatus	Doyère	1840			17	Species
+248402	1013415	urn:lsid:dyntaxa.se:Taxon:248402	Echiniscus lapponicus	Thulin	1911			17	Species
+248403	1013415	urn:lsid:dyntaxa.se:Taxon:248403	Echiniscus merokensis	Richters	1904			17	Species
+248405	1013415	urn:lsid:dyntaxa.se:Taxon:248405	Echiniscus muscicola	Plate	1888			17	Species
+6007211	1013415	urn:lsid:dyntaxa.se:Taxon:6007211	Echiniscus pusae	Marcus	1928			17	Species
+248407	1013415	urn:lsid:dyntaxa.se:Taxon:248407	Echiniscus quadrispinosus	Richters	1902			17	Species
+248408	1013415	urn:lsid:dyntaxa.se:Taxon:248408	Echiniscus spiniger	Richters	1904			17	Species
+248409	1013415	urn:lsid:dyntaxa.se:Taxon:248409	Echiniscus testudo	Doyère	1840			17	Species
+248410	1013415	urn:lsid:dyntaxa.se:Taxon:248410	Echiniscus trisetosus	Cuénot	1932			17	Species
+248411	1013415	urn:lsid:dyntaxa.se:Taxon:248411	Echiniscus wendti	Richters	1903			17	Species
+6007213	6007212	urn:lsid:dyntaxa.se:Taxon:6007213	Parechiniscus chitonides	Cuénot	1926			17	Species
+6007437	1013417	urn:lsid:dyntaxa.se:Taxon:6007437	Pseudechiniscus facettalis	Petersen	1951			17	Species
+248412	1013417	urn:lsid:dyntaxa.se:Taxon:248412	Pseudechiniscus suillus	Ehrenberg	1853			17	Species
+6007215	6007214	urn:lsid:dyntaxa.se:Taxon:6007215	Testechiniscus spitsbergensis	Scourfield	1897			17	Species
+248470	248439	urn:lsid:dyntaxa.se:Taxon:248470	Adropion scoticum ommatophorum	Thulin	1911			18	Subspecies
+240532	240531	urn:lsid:dyntaxa.se:Taxon:240532	Actinarctus doryphorus doryphorus	Schulz	1935			18	Subspecies
+240534	240533	urn:lsid:dyntaxa.se:Taxon:240534	Echiniscoides sigismundi sigismundi	C.A.S.Schultze	1865			18	Subspecies
+248404	248403	urn:lsid:dyntaxa.se:Taxon:248404	Echiniscus merokensis suecicus	Thulin	1911			18	Subspecies
+6007210	248403	urn:lsid:dyntaxa.se:Taxon:6007210	Echiniscus merokensis merokensis	Richters	1904			18	Subspecies

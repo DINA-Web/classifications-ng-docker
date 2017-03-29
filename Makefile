@@ -6,6 +6,14 @@ init:
 	#test -f nameindex/dwca-col-mammals.zip || curl --progress -o nameindex/dwca-col-mammals.zip \
 	#	https://s3.amazonaws.com/ala-nameindexes/20140610/dwca-col-mammals.zip
 
+dyntaxa-dl:
+	docker build -t dina/pythonr d2csv
+	docker run --rm -it --user rstudio \
+		-v $(PWD)/d2csv:/home/rstudio/foo \
+		-w /home/rstudio/foo \
+		dina/pythonr \
+	sh -c "make ID=5000013"
+
 build:
 	docker build -t dina/ala-nameindex:v0.1 nameindex
 
