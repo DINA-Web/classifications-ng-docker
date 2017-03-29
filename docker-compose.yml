@@ -3,7 +3,7 @@ version: '2'
 services:
 
   nameindexer:
-    image: dina/ala-nameindex:v0.1
+    image: bioatlas/backbone:v0.1
     command: /bin/ash
 
   api:
