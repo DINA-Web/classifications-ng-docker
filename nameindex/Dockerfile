@@ -1,9 +1,9 @@
 FROM openjdk:7-alpine
 
-RUN mkdir -p /data/lucene/sources
-COPY dwca-col-mammals.zip /data/lucene/sources/
-RUN	unzip /data/lucene/sources/dwca-col-mammals.zip -d /data/lucene/sources/
-RUN rm /data/lucene/sources/dwca-col-mammals.zip
+RUN mkdir -p /data/lucene/sources/dwca-dyntaxa
+COPY dwca-dyntaxa.zip /data/lucene/sources/
+RUN	unzip /data/lucene/sources/dwca-dyntaxa.zip -d /data/lucene/sources/dwca-dyntaxa
+RUN rm /data/lucene/sources/dwca-dyntaxa.zip
 
 COPY nameindexer.zip /usr/lib/nameindexer/
 RUN unzip -o /usr/lib/nameindexer/nameindexer.zip -d /usr/lib/nameindexer
@@ -15,6 +15,6 @@ RUN chmod 777 /usr/lib/nameindexer/nameindexer && \
 	cat /usr/lib/nameindexer/nameindexer.jar >> /usr/lib/nameindexer/nameindexer && \
 	ln -s /usr/lib/nameindexer/nameindexer /usr/bin/nameindexer
 
-RUN nameindexer --dwca /data/lucene/sources/dwca-col-mammals
+RUN nameindexer --dwca /data/lucene/sources/dwca-dyntaxa
 
 VOLUME /data/lucene

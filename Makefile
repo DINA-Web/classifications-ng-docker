@@ -3,8 +3,8 @@
 all: clean init build up
 
 init:
-	test -f nameindex/dwca-col-mammals.zip || curl --progress -o nameindex/dwca-col-mammals.zip \
-		https://s3.amazonaws.com/ala-nameindexes/20140610/dwca-col-mammals.zip
+	#test -f nameindex/dwca-col-mammals.zip || curl --progress -o nameindex/dwca-col-mammals.zip \
+	#	https://s3.amazonaws.com/ala-nameindexes/20140610/dwca-col-mammals.zip
 
 build:
 	docker build -t dina/ala-nameindex:v0.1 nameindex

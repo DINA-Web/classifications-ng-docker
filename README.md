@@ -28,4 +28,11 @@ There is a Makefile for managing this composition of component:
 
 ## Loading content
 
+Content is provided as `nameindex/dwca-dyntaxa.zip` with Dyntaxa data from 2012 in DarwinCore Archive format.
+
+Use `make build` to generate the image, and push to Docker Hub with `make release`.
+
 ## Questions / issues / discussions
+
+
+
