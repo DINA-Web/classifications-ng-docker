@@ -14,6 +14,7 @@ specieslist <- c(sciname)
 classification(specieslist, db = 'gbif')
 
 classification_gbif <- function(sciname) {
+  # this key is Dyntaxa
   key <- "de8934f4-a136-481c-a87a-b0b202b80a31"
   res <- gbif_name_usage(datasetKey = key, name = sciname)
   
