@@ -3,14 +3,16 @@ version: '2'
 services:
 
   nameindexer:
-    image: dina/ala-nameindex:v0.1
+    image: bioatlas/backbone:v0.1
     command: /bin/ash
 
-  api:
-    image: openjdk:8-alpine
-    command: /bin/ash
+  api: 
+    image: dina/classifications-api:v0.1
+    ports:
+      - "8080:8080"
     volumes_from:
       - nameindexer
+    container_name: api
 
   backup:
     image: alpine
