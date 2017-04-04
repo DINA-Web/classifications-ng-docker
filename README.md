@@ -37,4 +37,9 @@ Use `make dyntaxa-dl` to pull up-to-date Dyntaxa data
 ## TODO / Questions / issues / discussions
 
 - Refactor the dyntaxa conversion to dwca
-
+- What about gettin info for...
+	* scientificNameAuthorship - Example: "(Torr.) J.T. Howell", "(Martinovský) Tzvelev", "(Györfi, 1952)".
+	* nomenclaturalCode - Examples: "ICBN", "ICZN", "BC", "ICNCP", "BioCode", "ICZN; ICBN"
+	* taxonomicStatus - Examples: "invalid", "misapplied", "homotypic synonym", "accepted"
+	* nomenclaturalStatus - Examples: "nom. ambig.", "nom. illeg.", "nom. subnud.". 
+	* ? why is this in col_mammals.txt? occurrenceStatus - Examples: "present", "absent".

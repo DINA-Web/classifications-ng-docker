@@ -12,7 +12,8 @@ dyntaxa-dl:
 		-v $(PWD)/d2csv:/home/rstudio/foo \
 		-w /home/rstudio/foo \
 		dina/pythonr \
-	sh -c "make ID=5000013"
+	sh -c "make ID=0"
+	#sh -c "make ID=5000013"
 
 build:
 	docker build -t dina/ala-nameindex:v0.1 nameindex

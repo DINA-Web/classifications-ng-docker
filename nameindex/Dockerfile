@@ -17,6 +17,11 @@ RUN chmod 777 /usr/lib/nameindexer/nameindexer && \
 	cat /usr/lib/nameindexer/nameindexer.jar >> /usr/lib/nameindexer/nameindexer && \
 	ln -s /usr/lib/nameindexer/nameindexer /usr/bin/nameindexer
 
+# java –jar ala-name-matching-2.1.jar --all \
+# --dwca /data/names/dwca-col \
+# --target /data/lucene/testdwc-namematching \
+# --irmng /data/names/irmng/IRMNG_DWC_HOMONYMS \
+# --common /data/names/col_vernacular.txt
 RUN nameindexer --dwca /data/lucene/sources/dwca-dyntaxa
 
 VOLUME /data/lucene

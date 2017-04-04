@@ -1,11 +1,11 @@
-library("xml2")
-library("dplyr")
-library("purrr")
-library("data.tree")
-library("readr")
+library(xml2)
+library(dplyr)
+library(purrr)
+library(data.tree)
+library(readr)
+library(tidyr)
 
 base <- paste0(getwd(), "/")  # "~/repos/dina-web/dw-classifications/plutof-data/"
-#base <- "/mnt/data/projects/classifications-docker/d2csv/"
 header <- readLines(paste0(base, "header.xml"))
 footer <- readLines(paste0(base, "dyntaxa.xml"), warn = FALSE)[-c(1:5)]
 doc <- paste(collapse = "\n", c(header, footer))
@@ -42,13 +42,6 @@ links <- tbl_df(read.csv(file = out))
 nodes <- tbl_df(read.csv(file = paste0(base, "attribs.csv"), 
  header = TRUE, sep = "\t", stringsAsFactors = FALSE, encoding = "utf8"))
 
-
-#TODO: NA-värden i join-kolumn?
-oops <- 
-  nodes %>% mutate(IntId = as.numeric(Id)) %>%
-  arrange(desc(is.na(IntId))) %>% 
-  select(Id, IntId, ScientificName, everything())
-
 nodelink <- 
   nodes %>% mutate(Id = as.numeric(Id)) %>%
   filter(!is.na(Id)) %>%
@@ -62,8 +55,7 @@ nodelink <- tbl_df(read.csv(file = out))
 tsv <- 
   nodelink %>% 
   select(taxonID = Id, parentNameUsageID = Parent,
-         taxon_rank_id = CategoryId,
-         author = Author,
+         taxon_rank_id = CategoryId, author = Author,
          code = Guid, everything()) %>%
   mutate(CommonName = trimws(CommonName)) %>%
   mutate(use_parentheses = ifelse(grepl("(", author, fixed = TRUE), 1, NA)) %>%
@@ -81,12 +73,16 @@ dwca <- tsv %>%
   filter(!(taxon_rank_id %in% c(22, 23, 27, 28, 32, 33, 50, 51))) %>%
   # recode hybrids to species because DarwinCore prefers that
   mutate(taxon_rank_id = ifelse(taxon_rank_id == 21, 17, taxon_rank_id)) %>%
-  # remap column names to fit with Darwin Core column names
   select(everything())
 
-ranks <- read.csv(paste0(base,"taxonRank.csv"))
+# NB: this relies on the taxonRank.py to have been executed (Makefile will do that)
+ranks <- read.csv(paste0(base, "taxonRank.csv"))
 res <- left_join(dwca, ranks, by = c("taxon_rank_id" = "taxonRankID")) %>%
-  select(taxonID, parentNameUsageID, scientificNameID = code, scientificName = ScientificName,  scientificNameAuthorship = author, namePublishedInYear = year,  CommonName, vernacularName = vernacular_names, taxonRankID = taxon_rank_id, taxonRank)
+  # remap column names to fit with Darwin Core column names
+  select(taxonID, parentNameUsageID, scientificNameID = code, 
+         scientificName = ScientificName,  scientificNameAuthorship = author, 
+         namePublishedInYear = year,  CommonName, 
+         vernacularName = vernacular_names, taxonRankID = taxon_rank_id, taxonRank)
 
 res <- arrange(res,taxonRankID)
 res[which(is.na(res$parentNameUsageID)), ]$parentNameUsageID <- 0
@@ -96,7 +92,7 @@ write.table(res, file = out, sep = "\t",
   row.names = FALSE, na = "", quote = FALSE)
 
 my_tree <- FromDataFrameNetwork(as.data.frame(res))
-print(my_tree, "level")
+#print(my_tree, "level")
 
 # fcn to get ancestors as a "long" data frame
 # on the form: from_node, to_node, distance/hops
@@ -128,50 +124,14 @@ df <-
   ancestors #%>% 
   #filter(distance > 0)
 
-# demo how to use the df closure table 
-# to get ancestors for a given node id
-#df %>% filter(node == 248439)
-
-# now we want to have rank data 
-# for each node at specific rank levels
-# for this we need to know each node's
-# categoryId/rank
-
-# get category/rank for each node
-#attribs <- read_delim(
-#  delim = "\t",
-#  file = paste0(base,"attribs.csv")
-#)
-
 # for now, just use the CategoryId attribute
 # we select those columns and throw the rest away
 attribs <- 
   res %>% 
-  select(Id = taxonID, CategoryId = taxonRankID, ScientificName = scientificName)
-
-# demo: what unique rank ids are represented?
-rank_ids <- 
-  df %>% 
-  left_join(attribs, by = c("node" = "Id")) %>%
-  .$CategoryId %>%
-  unique
-
-rank_ids
-
-# choose a set of n ranks that we need for each node
-# five_ranks <- sample(rank_ids, size = 5, replace = FALSE)
-five_ranks <- sort(rank_ids)[1:5]
-
-# use a bogus lookup for ranks for now ...
-# this needs to be replaced by proper data
-
-lu <- data_frame(
-  CategoryId = five_ranks, 
-  Category = c("Kingdom", "Phylum", "Species", "Genus", "Hybrid")
-)
+  select(Id = taxonID, CategoryId = taxonRankID, 
+         ScientificName = scientificName)
 
 relevant_ranks <- c(1, 2, 5, 8, 11, 14, 17, 18:20)
-#relevant_ranks <- c(2, 5, 8, 11, 14, 17, 18:20)
 
 lu <-
   ranks %>%
@@ -185,8 +145,6 @@ attrs <-
   filter(CategoryId %in% relevant_ranks) %>%
   right_join(lu)
 
-attrs %>% filter(CategoryId == 1)
-
 # decorate the closure table with ancestor rank data
 decorated <- 
   df %>% 
@@ -194,13 +152,8 @@ decorated <-
   #  filter(node == 6007253) %>%
   select(-c(2:3))  # skip just some columns, select the rest
 
-# demo how to retrieve all nodes for a specific rank
-#decorated %>% filter(CategoryId == 1)
-
 # now we want to pivot (or spread data) to get 
 # specific rank levels for nodes across columns
-
-library(tidyr)
 
 wide <- 
   decorated %>% 
@@ -208,8 +161,8 @@ wide <-
   spread(key = Category, value = ScientificName, fill = NA) %>%
   select(taxonId = node, Kingdom, Phylum, Class, Order, Family, Genus, Species) 
 
-# inspect the results
-temp <- 
+out <- 
   tsv %>% left_join(wide, by = c("taxonID" = "taxonId"))
 
-temp
+write.csv(out, "taxon.csv", row.names = FALSE)
+
