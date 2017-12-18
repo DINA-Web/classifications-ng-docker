@@ -9,7 +9,7 @@ library(networkD3)
 library(microbenchmark)
 
 
-base <- "~/repos/dina-web/classifications-ng-docker/d2csv/"
+base <- "~/repos/bioatlas/classifications-ng-docker/d2csv/"
 
 tree_df <- read_csv(
   paste0(base, "tree.csv"), 
