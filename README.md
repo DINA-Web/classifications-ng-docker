@@ -34,6 +34,29 @@ Use `make build` to generate the image, and push to Docker Hub with `make releas
 
 Use `make dyntaxa-dl` to pull up-to-date Dyntaxa data
 
+## Notes related to practices for loading data in a national checklist
+
+A great primer is available here, please read it: https://github.com/AtlasOfLivingAustralia/bie-index/blob/master/doc/nameology/index.md
+
+In the context of Dyntaxa, the following notes may provide some rules of thumb or guidelines to follow:
+
+- When loading the Dyntaxa checklist from a Darwin Core Archive, not all Darwin Core fields need to be populated. In fact, providing a richer set of fields (such as higher ranks etc for each record) will not necessarily make use of those, so avoiding to provide fields beyond what is strictly required may even save some time and reduce complexity of pre-processing tasks. 
+
+- If the field `acceptedNameUsageID` has a value containing the identifier ID another taxon, the record is a synonym.
+
+- A value of "accepted" for `taxonomicStatus` indicates the status of the use of the scientificName as a label for a taxon (other valid values are "invalid", "misapplied", "homotypic synonym".
+
+- The field `taxonConceptID` can be used with an identifier for the taxonomic concept to which the record refers - not for the nomenclatural details of a taxon.
+
+- Even if namematching finds no match, a search could still be made using the raw name but such a name would be "orphaned" in the sense that a search for a higher rank would not be able to include anything that cannot be matched (obviously).
+
+- For homonyms (such as Ananthe, which can refer both a bird and a plant, or Passer which is also a homonym), you need more information such as higher ranks that can help in distinguishing these. A dataset from IRMNG with homonyms can be extended with additional homonyms (if present beyond what is available in that dataset) and loaded.
+
+- When loading several DwCA-files, the nameindex component expects there to be no overlaps (it doesn't merge, this needs to happen as a pre-processing step).
+
+- In the Atlas of Living Australia components, there is the BIE component - the Biodiversity Explorer - it provides a species component with search functionality that can be called like this "curl species.nbnatlas.org/search/?g=squirrel" which makes a call into a web service wrapping the nameindex library that in turn reads from the lucene index. Some documentation on this is available here: https://github.com/AtlasOfLivingAustralia/bie-index#darwin-core-archive-format-of-taxonomic-information
+
+
 ## TODO / Questions / issues / discussions
 
 - Refactor the dyntaxa conversion to dwca

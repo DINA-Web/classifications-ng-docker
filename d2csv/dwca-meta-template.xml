@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/" metadata="eml.xml">
+	<core encoding="UTF-8" linesTerminatedBy="\n" fieldsTerminatedBy="\t" 
+fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/
+Taxon">
+		<files>
+			<location>taxon.txt</location>
+		</files>
+		<id index="0"/>
+    <field index="##index_number##" term="http://rs.tdwg.org/dwc/terms/##dwc_term##"/>
+  </core>
+</archive>

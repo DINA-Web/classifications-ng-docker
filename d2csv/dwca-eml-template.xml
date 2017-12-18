@@ -1,0 +1,93 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:md="eml://ecoinformatics.org/methods-2.1.1" xmlns:proj="eml://ecoinformatics.org/project-2.1.1" xmlns:d="eml://ecoinformatics.org/dataset-2.1.1" xmlns:res="eml://ecoinformatics.org/resource-2.1.1" xmlns:dc="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.1/eml.xsd" packageId="http://ipt.gbif.org/resource.do?id=dyntaxa/v1" system="http://gbif.org" scope="system" xml:lang="swe">
+<dataset>
+<title xml:lang="swe">Dyntaxa - Svensk taxonomisk databas</title>
+<creator>
+<individualName>
+<givenName>Oskar</givenName>
+<surName>Kindvall</surName>
+</individualName>
+<organizationName>Artdatabanken</organizationName>
+<address>
+<country>SE</country>
+</address>
+<electronicMailAddress>Oskar.Kindvall@slu.se</electronicMailAddress>
+</creator>
+<metadataProvider>
+<individualName>
+<givenName>David</givenName>
+<surName>Remsen</surName>
+</individualName>
+<organizationName>GBIF Secretariat</organizationName>
+<positionName>Programme Officers</positionName>
+<address>
+<deliveryPoint>Universitetsparken 15</deliveryPoint>
+<city>Copenhagen</city>
+<postalCode>2100</postalCode>
+<country>DK</country>
+</address>
+<phone>+45 28751472</phone>
+<electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
+<onlineUrl>http://www.gbif.org</onlineUrl>
+</metadataProvider>
+<associatedParty>
+<individualName>
+<givenName>Tim</givenName>
+<surName>Robertson</surName>
+</individualName>
+<electronicMailAddress>trobertson@gbif.org</electronicMailAddress>
+<role>user</role>
+</associatedParty>
+<pubDate>2012-03-08</pubDate>
+<language>eng</language>
+<abstract>
+<para>
+Dyntaxa är en svensk taxonomisk databas över Sveriges organismer. Den fungerar som normerande begreppslista i ArtDatabankens övriga databaser, exempelvis Artportalen, och utnyttjas i växande utsträckning även av externa användare i Sverige. Dyntaxa innehåller taxonomisk information om ca 58 500 arter (juni 2011), varav merparten förekommer mer eller mindre regelbundet i Sverige. Detta motsvarar 80–90 % av de arter som är kända från Sverige. Målsättningen är att alla arter med dokumenterad förekomst i Sverige skall finnas med i databasen – åtminstone de flercelliga arterna och sådana encelliga arter som omfattas av Naturvårdsverkets miljöövervakning. Utöver dessa arter finns ett stort antal namn på andra taxonomiska nivåer, vetenskapliga synonymer, svenska namn m.m. Sammanlagt inkluderar databasen fler än 146 000 namn (juni 2011). Dyntaxa uppdateras kontinuerligt med tidigare ej registrerade arter, nya arter för Sverige, ändringar av taxonomin, och införande av svenska namn och synonyma vetenskapliga namn.
+</para>
+</abstract>
+<keywordSet>
+<keyword>Artdatabanken</keyword>
+<keyword>Sweden</keyword>
+<keyword>species</keyword>
+<keyword>checklists</keyword>
+<keyword>regional</keyword>
+<keywordThesaurus>n/a</keywordThesaurus>
+</keywordSet>
+<distribution scope="document">
+<online>
+<url function="information">
+http://lampetra2-1.artdata.slu.se:6767/EXEC/0/1ldrzw20v3c04117x55de0fz941i
+</url>
+</online>
+</distribution>
+<coverage>
+<geographicCoverage>
+<geographicDescription>Sverige</geographicDescription>
+<boundingCoordinates>
+<westBoundingCoordinate>10.83</westBoundingCoordinate>
+<eastBoundingCoordinate>24.24</eastBoundingCoordinate>
+<northBoundingCoordinate>70.18</northBoundingCoordinate>
+<southBoundingCoordinate>55.76</southBoundingCoordinate>
+</boundingCoordinates>
+</geographicCoverage>
+</coverage>
+<contact>
+<individualName>
+<givenName>Oskar</givenName>
+<surName>Kindvall</surName>
+</individualName>
+<organizationName>Artdatabanken</organizationName>
+<address>
+<country>SE</country>
+</address>
+<electronicMailAddress>Oskar.Kindvall@slu.se</electronicMailAddress>
+</contact>
+</dataset>
+<additionalMetadata>
+<metadata>
+<gbif>
+<dateStamp>2012-03-08T01:02:15.270+01:00</dateStamp>
+<hierarchyLevel>dataset</hierarchyLevel>
+</gbif>
+</metadata>
+</additionalMetadata>
+</eml:eml>

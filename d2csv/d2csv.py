@@ -93,7 +93,7 @@ for event, elem in cElementTree.iterparse(XML, events):
     show_console_progress(count)
     for field in field_list:
       res = get_field(elem, field)
-      fields.append(res)
+      fields.append(res.strip())
     row = "\t".join(fields) + "\n"
     fo.write(row.encode("utf8"))
     
