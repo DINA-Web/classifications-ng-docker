@@ -1,4 +1,4 @@
-ID = 5000013
+ID = 0
 
 all: taxonRank dl tsv
 
@@ -14,7 +14,8 @@ attribs:
 
 tsv: attribs
 	@echo "Creating tsv"
-	@Rscript ./d2csv.R
+	#@Rscript ./d2csv.R
+	@Rscript ./dwca-dyntaxa.R
 	@cp tree.csv rels.csv
 	@rm -f dyntaxa.xml tree.csv dyntaxa.csv $(ID).csv
 
